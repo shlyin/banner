@@ -1,0 +1,47 @@
+body {
+    background: black;
+}
+.box-reflect {
+    white-space:nowrap;
+}
+.in {
+    display: inline-block;
+}
+.photo {
+    list-style: none;
+    width: 200px;
+    height: 150px;
+    margin-top: 400px;
+    transition: 1s width, 1s height, 1s margin;
+}
+.box-reflect img {
+    -webkit-box-reflect: below 0 linear-gradient(transparent, white 140%, white);
+}
+.active {
+    width: 500px;
+    height: 400px;
+    margin-top: 0;
+}
+.next,
+.prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 60px;
+    cursor: pointer;
+    background-color: #808080;
+    padding-bottom: 7px;
+    text-align: center;
+    opacity: 0.5;
+}
+.prev {
+    left: 30px;
+}
+.next {
+    right: 30px;
+}
+.next:hover,
+.prev:hover {
+    opacity:1 !important;
+}
